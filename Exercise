@@ -1,0 +1,102 @@
+"""
+Exercise, due by the end of the class
+1. Create variable for: 
+  name, age, country, then print them in a sentence.
+2. Ask the user for their birth year and calculate their age.
+3. Converta string "25" into an integer.
+4. Find the remainder when the dividing 17 by 3.
+5. Calculate the area of a rectangle .
+6. Swapthe values of two variables.
+7. Calculate the area of a circle.
+8. Accept a number and check if the number is positive or negative.
+9. Print numbers from 1 to 10 using a for loop.
+10. Print all even numbers from 1 to 20.
+11. Create a list of five fruits.
+12. Print the first and last item in a list.
+13. Add a new item to a list.
+14. Remove an item from a list.
+15. Find the largest number in a list.
+16. Count how many times a number appears in a list.
+"""
+
+# 1. Variables and print in a sentence
+name = "Collins"
+age = 20
+country = "Ghana"
+print(f"My name is {"Collins"}, I am {20} years old, and I am from {"Ghana"}:")
+
+# 2. birth year and calcultate age 
+brith_year = int(input("Enter your birth year:"))
+current_year = 2026
+age = current_year-"birth_year"
+print(f"You are {age} years old.")
+
+# 3. convert string "25" to integer
+num_str = "25"
+num_int = int(num_str)
+print(num_int, type(num_int))
+
+# 4. Remainder when dividing 17 by 3
+remainder = 17 % 3
+print(remainder)
+
+# 5. Area of a rectangle 
+length = 10
+width = 5
+area = length * width 
+print (f"Area of recangle: {area}")
+
+# 6. Swap values of two variables 
+a = 5
+b = 10
+a, b = b, a
+print(f"a, = {a}, b = {b}")
+
+# 7. Area of a circle
+radius = 7
+area_circle = "math".pi * radius**2
+print(f"Area of circle: {area_circle: .2f}")
+
+# 8. check if the number is positive or negative 
+num = int(input("Enter a number:"))
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+# 9. Print numbers 1 to 10 using loop
+for i in range(1, 11):
+    print(i, end=" ")
+
+# 10. Print all even numbers from 1 to 20 
+for i in range(1, 21):
+    if i % 2 == 0:
+        print(i, end=" ")
+    print ()
+
+# 11. Create a list of five fruits
+fruits = ["apple", "banana", "mango", "orange", "grape"]
+
+# 12. print first and last item in a list
+print(f"First: {fruits[0]}, Last: {fruits[-1]}")
+
+# 13. Add a new item to a list
+fruits.append("pineaaple")
+print(fruits)
+
+# 14. Remove an item from a list
+fruits.remove("banana")
+print(fruits)
+
+# 15. Find the largest number in a list
+numbers = [3, 9, 1, 7, 5]
+largest = max(numbers)
+print(f"Largest number: {largest}")
+
+# 16. Count how many time a number appears in a list
+nums = [1, 2, 3, 2, 4, 2,5]
+count = num.count(2)
+print(f"Number 2 appears {count} time")
+    
